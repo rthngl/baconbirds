@@ -20,19 +20,18 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 1. This works best in an anaconda virtual environment. To start one:
       * for the ucla hoffman2 cluster (gpu)
       
-	qrsh -l gpu,P4
+	```bash
+	    qrsh -l gpu,P4
         module load python/anaconda3
         . "/u/local/apps/anaconda3/etc/profile.d/conda.sh"
         . $CONDA_DIR/etc/profile.d/conda.sh
 	```
       
+	* on mac osx
       
-      * on mac osx
-      
-        
         ```bash
-            conda create -n fortf python=3.5 anaconda
-            conda activate fortf
+        conda create -n fortf python=3.5 anaconda
+        conda activate fortf
         ```
 
 2. Set up your training/testing data. 
