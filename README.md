@@ -20,8 +20,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 1. This works best in an anaconda virtual environment. To start one:
       * for the ucla hoffman2 cluster (gpu)
       
-       ```bash
-	    qrsh -l gpu,P4
+	qrsh -l gpu,P4
         module load python/anaconda3
         . "/u/local/apps/anaconda3/etc/profile.d/conda.sh"
         . $CONDA_DIR/etc/profile.d/conda.sh
