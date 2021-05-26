@@ -18,7 +18,7 @@ This application of CycleGAN builds on the idea of adapting abstract impressioni
 We are reproducing here, for reference, instructions from [Yang and Silberman's implementation](https://github.com/leehomyc/cyclegan-1/blob/master/README.md), and adding a few notes.
 
 1. This works best in an anaconda virtual environment. To start one:
-      * for the ucla hoffman2 cluster (gpu)
+    * for the ucla hoffman2 cluster (gpu)
       
 	```bash
 	qrsh -l gpu,P4
@@ -27,7 +27,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 	. $CONDA_DIR/etc/profile.d/conda.sh
 	```
       
-      * on mac osx
+    * on mac osx
       
 	```bash
 	conda create -n fortf python=3.5 anaconda
@@ -35,7 +35,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 	```
 
 2. Set up your training/testing data. 
-        * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who this will bother). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
+    * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who this will bother). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
         
 	   - CycleGAN_TensorFlow      
             |- input folder (horse2zebra)
@@ -43,3 +43,14 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
               |- trainB
               |- testA
               |- testB
+
+3. Create the csvs for loading/processing data. 
+    * Edit cyclegan_datasets.py with
+          * number of training/testing images for your larger dataset
+          * jpg or png as your file format
+          * paths to where your training and testing index files will go, something like: /path/to/CycleGAN_TensorFlow/input/horse2zebra_train.csv
+    * Run create_cyclegan_dataset.py
+    
+	```bash
+	 python -m CycleGAN_TensorFlow.create_cyclegan_dataset --image_path_a=/path/to/trainA --image_path_b=/path/to/trainB --dataset_name="horse2zebra_train" --do_shuffle=0
+	```
