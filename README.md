@@ -29,10 +29,10 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
       
       * on mac osx
       
-        ```bash
-        conda create -n fortf python=3.5 anaconda
-        conda activate fortf
-        ```
+	```bash
+	conda create -n fortf python=3.5 anaconda
+	conda activate fortf
+	```
 
 2. Set up your training/testing data. 
         * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who this will bother). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
