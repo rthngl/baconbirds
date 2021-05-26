@@ -21,10 +21,10 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
       * for the ucla hoffman2 cluster (gpu)
       
 	```bash
-	    qrsh -l gpu,P4
-        module load python/anaconda3
-        . "/u/local/apps/anaconda3/etc/profile.d/conda.sh"
-        . $CONDA_DIR/etc/profile.d/conda.sh
+	qrsh -l gpu,P4
+	module load python/anaconda3
+	. "/u/local/apps/anaconda3/etc/profile.d/conda.sh"
+	. $CONDA_DIR/etc/profile.d/conda.sh
 	```
       
 	* on mac osx
@@ -37,10 +37,9 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 2. Set up your training/testing data. 
         * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who this will bother). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
         
-	- CycleGAN_TensorFlow
-                
-          |- input folder (horse2zebra)
-             |- trainA
-             |- trainB
-             |- testA
-             |- testB
+	   - CycleGAN_TensorFlow      
+            |- input folder (horse2zebra)
+              |- trainA
+              |- trainB
+              |- testA
+              |- testB
