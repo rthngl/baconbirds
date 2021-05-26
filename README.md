@@ -27,7 +27,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 	. $CONDA_DIR/etc/profile.d/conda.sh
 	```
       
-	* on mac osx
+      * on mac osx
       
         ```bash
         conda create -n fortf python=3.5 anaconda
