@@ -51,10 +51,12 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
           * number of training/testing images for your larger dataset
           * jpg or png as your file format
           * paths to where your training and testing index files will go, something like: /path/to/CycleGAN_TensorFlow/input/horse2zebra_train.csv
-    * Run create_cyclegan_dataset.py
+    * Run create_cyclegan_dataset.py for your training AND testing data
     
 	```bash
 	python -m CycleGAN_TensorFlow.create_cyclegan_dataset --image_path_a=/path/to/trainA --image_path_b=/path/to/trainB --dataset_name="horse2zebra_train" --do_shuffle=0
+	python -m CycleGAN_TensorFlow.create_cyclegan_dataset --image_path_a=/path/to/testA --image_path_b=/path/to/testB --dataset_name="horse2zebra_test" --do_shuffle=0
+
 	```
 
 4. Train the model.
@@ -80,9 +82,16 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 
 6. Test the model.
     * Make sure you assembled your testing dataset and created the index csv (step 3).
-
+    * Runs on test data, saves to CycleGAN_Tensorflow/output/cyclegan/exp_01/#timestamp#
+	```bash
+	python -m CycleGAN_TensorFlow.main \
+	    --to_train=0 \
+	    --log_dir=CycleGAN_TensorFlow/output/cyclegan/exp_01 \
+	    --config_filename=CycleGAN_TensorFlow/configs/exp_01_test.json \
+	    --checkpoint_dir=CycleGAN_TensorFlow/output/cyclegan/exp_01/#old_timestamp# 
+	```
 	
-## notes on bugs
+## notes
    * Right now in main.py, images are saved using matplotlib.pyplot.imsave. Could also use imageio.imsave, if preferred. If you're taking the code from Yang and Silberman, you'll need to change from scipy.misc.imsave, which is depreciated.
    * If I don't run this in a conda environment, the tensorflow is pretty buggy (v1/v2/depreciated stuff/etc). It is also a bit of a mess in colab. Fair warning. Also, as of this writing, tf can't be used in python3.8. Worked well in 3.5.
-   * 
+   * I don't own and didn't make any of this, it's just for fun. That said, let me know if you have thoughts or find bugs!
