@@ -13,6 +13,11 @@ While somewhat abstracted examples of style transfer can be found ([Boshi et al.
 
 This application of CycleGAN builds on the idea of adapting abstract impressionism by transferring the style of [Francis Bacon](https://francis-bacon.com/paintings) onto birds [via NABirds](https://dl.allaboutbirds.org/nabirds). We use 133 Bacon paintings (1930s-1990s -- we omit the very cubist works from the late 20s). We're aiming to see if any of the distortive/horror elements of Bacon's style persist in the generated images. 
 
+Sample training data:
+
+![Slide1](https://user-images.githubusercontent.com/56600718/119879946-9e235700-bee0-11eb-9fa6-07cc58735ca9.png) ![Slide2](https://user-images.githubusercontent.com/56600718/119879997-a8ddec00-bee0-11eb-8723-84695d42153c.png)
+
+
 ## running the code
 
 We are reproducing here, for reference, instructions from [Yang and Silberman's implementation](https://github.com/leehomyc/cyclegan-1/blob/master/README.md), and adding a few notes.
