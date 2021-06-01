@@ -53,9 +53,10 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 
 3. Create the csvs for loading/processing data. 
     * Edit cyclegan_datasets.py with
-          * number of training/testing images for your larger dataset
-          * jpg or png as your file format
-          * paths to where your training and testing index files will go, something like: /path/to/CycleGAN_TensorFlow/input/horse2zebra_train.csv
+    
+        * number of training/testing images for your larger dataset
+        * jpg or png as your file format
+        * paths to where your training and testing index files will go, something like: /path/to/CycleGAN_TensorFlow/input/horse2zebra_train.csv
     * Run create_cyclegan_dataset.py for your training AND testing data
     
 	```bash
