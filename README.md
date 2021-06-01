@@ -47,7 +47,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 	```
 
 2. Set up your training/testing data. 
-    * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who this will bother). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
+    * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who ). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
         
 	 ```bash
 	 - CycleGAN_TensorFlow      
@@ -109,8 +109,23 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
    * If I don't run this in a conda environment, the tensorflow is pretty buggy (v1/v2/depreciated stuff/etc). It is also a bit of a mess in colab. Fair warning. Also, as of this writing, tf can't be used in python3.8. Worked well in 3.5.
    * I don't own and didn't make any of this, it's just for fun. That said, let me know if you have thoughts or find bugs!
 
-## progress
-   * After 6 epochs
+## intermediate progress
+  * After 20 epochs
+  
+  ![Slide3](https://user-images.githubusercontent.com/56600718/120390977-40797b00-c2e3-11eb-97a6-b1429cd3e621.png)
+
+  * After 15 epochs
+  
+  ![Slide2](https://user-images.githubusercontent.com/56600718/120391026-4ff8c400-c2e3-11eb-83a2-0d75fc9118d5.png)
+  
+  * After 10 epochs
+  
+  ![Slide1](https://user-images.githubusercontent.com/56600718/120391051-5a1ac280-c2e3-11eb-8ccc-2d66ae8fe651.png)
+
+  * After 6 epochs
    
   ![epoch6](https://user-images.githubusercontent.com/56600718/119878488-0709cf80-bedf-11eb-8310-339545fcf223.png)
+ 
+
+
 
