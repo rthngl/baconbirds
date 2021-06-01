@@ -1,6 +1,13 @@
 # baconbirds
 
-Code here is a lightly-adapted version of the Tensorflow implementation of CycleGAN written by Harry Yang and Nathan Silberman. 
+This project recreates pictures of birds in the style of Francis Bacon's paintings (1930s-1980s). 
+
+A few paintings and baconbirds-created images (20 training epochs):
+
+![Slide1](https://user-images.githubusercontent.com/56600718/120390635-ce089b00-c2e2-11eb-8ae9-fbd711163f2d.png)
+
+
+The code here is a lightly-adapted version of the Tensorflow implementation of CycleGAN written by Harry Yang and Nathan Silberman. 
 
 [Their Original Code](https://github.com/leehomyc/cyclegan-1) | [CycleGAN Project](https://junyanz.github.io/CycleGAN/) | [Zhu et al. 2017](https://arxiv.org/pdf/1703.10593.pdf)
 
