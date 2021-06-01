@@ -47,7 +47,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
 	```
 
 2. Set up your training/testing data. 
-    * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who ). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
+    * I downloaded the horse2zebra dataset (for testing) and then just left all the directory names the same (sorry to my brother, who will hate this). My baconbirds data are included here in the horse2zebra folder, but if you're making your own you'll need jpgs or pngs. The architecture is:
         
 	 ```bash
 	 - CycleGAN_TensorFlow      
