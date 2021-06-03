@@ -109,7 +109,7 @@ We are reproducing here, for reference, instructions from [Yang and Silberman's 
    * If I don't run this in a conda environment, the tensorflow is pretty buggy (v1/v2/depreciated stuff/etc). It is also a bit of a mess in colab. Fair warning. Also, as of this writing, tf can't be used in python3.8. Worked well in 3.5.
    * I don't own and didn't make any of this, it's just for fun. That said, let me know if you have thoughts or find bugs!
 
-## intermediate progress
+## progress
   * After 20 epochs
   
   ![Slide3](https://user-images.githubusercontent.com/56600718/120390977-40797b00-c2e3-11eb-97a6-b1429cd3e621.png)
